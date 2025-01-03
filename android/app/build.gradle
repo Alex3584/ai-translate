@@ -2,6 +2,9 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+// 2nd line, add a new apply:
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 def projectRoot = rootDir.getAbsoluteFile().getParentFile().getAbsolutePath()
 
 /**
@@ -86,9 +89,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.aitranslate'
+    namespace 'com.burakucar123.aitranslateapp'
     defaultConfig {
-        applicationId 'com.anonymous.aitranslate'
+        applicationId 'com.burakucar123.aitranslateapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -148,6 +151,8 @@ android {
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
+    implementation project(':react-native-mmkv')
+
     implementation("com.facebook.react:react-android")
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";

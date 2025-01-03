@@ -1,14 +1,13 @@
 import { useFonts } from "expo-font";
 import { Slot, useRouter, useSegments } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
+import { useEffect } from "react";
 import * as SecureStore from "expo-secure-store";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { ClerkProvider, useAuth, useUser } from "@clerk/clerk-expo";
 import { useStore } from "@/stores/store";
-import { useEffect } from "react";
-// import { getLocales } from "expo-localization";
+import { getLocales } from "expo-localization";
 import { Toaster } from "sonner-native";
-// import StartPage from "./index";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -39,7 +38,7 @@ const tokenCache = {
   },
 };
 
-const InitialScreen = () => {
+function InitialScreen() {
   const [loaded] = useFonts({
     "Metropolis-Thin": require("../assets/fonts/Metropolis-Thin.otf"),
     "Metropolis-ExtraLight": require("../assets/fonts/Metropolis-ExtraLight.otf"),
@@ -69,6 +68,13 @@ const InitialScreen = () => {
   }, [clerkUser]);
 
   useEffect(() => {
+    const userLocale = getLocales();
+    if (!locale.length && userLocale.length) {
+      setLocale(userLocale[0]?.languageCode || "");
+    }
+  }, []);
+
+  useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
     }
@@ -88,9 +94,9 @@ const InitialScreen = () => {
   }, [isSignedIn, user]);
 
   return <Slot />;
-};
+}
 
-const RootLayout = () => {
+export default function RootLayout() {
   return (
     <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
       <GestureHandlerRootView>
@@ -99,6 +105,4 @@ const RootLayout = () => {
       </GestureHandlerRootView>
     </ClerkProvider>
   );
-};
-
-export default RootLayout;
+}

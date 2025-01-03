@@ -21,7 +21,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
   }
 }
 
-rootProject.name = 'ai-translate'
+rootProject.name = 'AI Translate'
 
 dependencyResolutionManagement {
   versionCatalogs {

@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# React Native Translate App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a versatile translation app built with **React Native Expo**. It leverages the **OpenAI API** to translate text, speech, and images. **Clerk** is integrated for user management, allowing users to log in, view their translation history, and manage their profile information.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Text, speech, and image translation**: Powered by the OpenAI API for fast and accurate translations.
+- **User management**: Clerk integration enables secure user authentication and profile management.
+- **Translation history**: Users can view and access their past translations.
+- **Fast and reliable**: Zustand and MMKV ensure performant state management and efficient data storage.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technologies Used
 
-2. Start the app
+- **Expo**: Simplifies the development and execution of the React Native application.
+- **Expo Router**: Provides file-based routing for React Native apps, simplifying navigation.
+- **Reanimated**: A performant animation library for creating fluid and smooth animations.
+- **OpenAI API**: Handles text, speech, and image translation.
+- **Clerk**: User authentication and management system.
+- **Zustand**: Lightweight and efficient state management library.
+- **MMKV**: Fast and reliable data storage solution.
 
-   ```bash
-    npx expo start
-   ```
+## 📷 Application Screenshots
 
-In the output, you'll find options to open the app in a
+<div style="display: flex; flex-direction: 'row';">
+<img src="./screenshots/1.jpeg" width=30%>
+<img src="./screenshots/2.jpeg" width=30%>
+<img src="./screenshots/3.jpeg" width=30%>
+<img src="./screenshots/4.jpeg" width=30%>
+<img src="./screenshots/5.jpeg" width=30%>
+<img src="./screenshots/6.jpeg" width=30%>
+<img src="./screenshots/7.jpeg" width=30%>
+<img src="./screenshots/8.jpeg" width=30%>
+<img src="./screenshots/9.jpeg" width=30%>
+<img src="./screenshots/10.jpeg" width=30%>
+<img src="./screenshots/11.jpeg" width=30%>
+<img src="./screenshots/12.jpeg" width=30%>
+</div>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🔧 Installation and Usage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+To run the project on your local machine, follow these steps:
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/mburakucar/react-native-translate-app.git
+cd react-native-translate-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
 
-## Learn more
+```bash
+npm install
+# or
+yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Configure Clerk and OpenAI Keys
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Obtain your API keys from the Clerk dashboard and OpenAI.
+- Create a `.env` file in the root directory and add the following:
 
-## Join the community
+```env
+CLERK_API_KEY=your_clerk_api_key
+OPENAI_API_KEY=your_openai_api_key
+```
 
-Join our community of developers creating universal apps.
+### 4. App Setup
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+To build the app, perform the following steps:
+
+3. Run `npx expo prebuild`
+4. Run `npx expo run:ios` or `npx expo run:android`
+
+Open the app on your physical device or emulator using the development build.
+
+---
+
+Developer: Muhammet Burak UÇAR  
+Repository Link: [React Native AI Translate App](https://github.com/mburakucar/react-native-ai-translate-app)
