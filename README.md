@@ -1,4 +1,4 @@
-# React Native Translate App
+# React Native AI-Translate
 
 This project is a versatile translation app built with **React Native Expo**. It leverages the **OpenAI API** to translate text, speech, and images. **Clerk** is integrated for user management, allowing users to log in, view their translation history, and manage their profile information.
 
