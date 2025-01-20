@@ -73,8 +73,3 @@ To build the app, perform the following steps:
 4. Run `npx expo run:ios` or `npx expo run:android`
 
 Open the app on your physical device or emulator using the development build.
-
----
-
-Developer: Muhammet Burak UÇAR  
-Repository Link: [React Native AI Translate App](https://github.com/mburakucar/react-native-ai-translate-app)
