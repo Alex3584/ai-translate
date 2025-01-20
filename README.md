@@ -19,23 +19,6 @@ This project is a versatile translation app built with **React Native Expo**. It
 - **Zustand**: Lightweight and efficient state management library.
 - **MMKV**: Fast and reliable data storage solution.
 
-## 📷 Application Screenshots
-
-<div style="display: flex; flex-direction: 'row';">
-<img src="./screenshots/1.jpeg" width=30%>
-<img src="./screenshots/2.jpeg" width=30%>
-<img src="./screenshots/3.jpeg" width=30%>
-<img src="./screenshots/4.jpeg" width=30%>
-<img src="./screenshots/5.jpeg" width=30%>
-<img src="./screenshots/6.jpeg" width=30%>
-<img src="./screenshots/7.jpeg" width=30%>
-<img src="./screenshots/8.jpeg" width=30%>
-<img src="./screenshots/9.jpeg" width=30%>
-<img src="./screenshots/10.jpeg" width=30%>
-<img src="./screenshots/11.jpeg" width=30%>
-<img src="./screenshots/12.jpeg" width=30%>
-</div>
-
 ## 🔧 Installation and Usage
 
 To run the project on your local machine, follow these steps:
