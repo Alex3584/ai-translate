@@ -26,7 +26,7 @@ To run the project on your local machine, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mburakucar/react-native-translate-app.git
+git clone https://github.com/Alex3584/ai-translate.git
 cd react-native-translate-app
 ```
 
