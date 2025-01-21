@@ -45,7 +45,7 @@ yarn install
 
 ```env
 CLERK_API_KEY=your_clerk_api_key
-OPENAI_API_KEY=your_openai_api_key
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_openai_api_key
 ```
 
 ### 4. App Setup
