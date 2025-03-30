@@ -1,0 +1,7 @@
+*.js linguist-detectable
+*.jsx linguist-detectable
+*.ts linguist-detectable
+*.tsx linguist-detectable
+
+android/** linguist-vendored
+ios/** linguist-vendored
