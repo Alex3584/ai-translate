@@ -1,0 +1,9 @@
+# Явно указываем используемые языки
+*.js linguist-detectable
+*.jsx linguist-detectable
+*.ts linguist-detectable
+*.tsx linguist-detectable
+
+# Исключаем нативные папки
+ios/* linguist-vendored
+android/* linguist-vendored
